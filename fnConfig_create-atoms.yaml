@@ -1,0 +1,21 @@
+apiVersion: fn.kpt.dev/v1alpha1
+kind: treactor/CreateAtoms
+metadata:
+  name: create-atoms
+maxBond: 1
+maxNumber: 10
+treactorGo:
+  imageTag: "0.1.3"
+treactorJava:
+  imageTag: "0.1.2"
+treactorNode:
+  imageTag: "0.1.7"
+groups:
+  - group: 1
+    framework: "treactorJava"
+  - group: 2
+    framework: "treactorJava"
+  - group: 17
+    framework: "treactorNode"
+  - group: 18
+    framework: "treactorNode"
