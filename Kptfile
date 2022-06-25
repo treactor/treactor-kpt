@@ -9,7 +9,8 @@ info:
 pipeline:
   mutators:
     - image: gcr.io/treactor/kpt-fn/create-atoms:unstable
-      configPath: fnConfig_create-atoms.yaml
+      configPath: fnconfig_create-atoms.yaml
     - image: gcr.io/treactor/kpt-fn/ensure-sa:unstable
     - image: gcr.io/treactor/kpt-fn/ensure-telemetry:unstable
     - image: gcr.io/treactor/kpt-fn/no-op:unstable
+    # - image: gcr.io/treactor/kpt-fn/gateway-to-virtualservice:unstable

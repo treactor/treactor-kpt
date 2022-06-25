@@ -2,7 +2,9 @@ apiVersion: fn.kpt.dev/v1alpha1
 kind: treactor/CreateAtoms
 metadata:
   name: create-atoms
-maxBond: 1
+  annotations:
+    config.kubernetes.io/local-config: "true"
+imaxBond: 1
 maxNumber: 10
 treactorGo:
   imageTag: "0.1.3"
